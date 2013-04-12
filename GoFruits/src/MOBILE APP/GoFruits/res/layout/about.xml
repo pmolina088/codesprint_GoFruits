@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aboutl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="Tuti Frutti A team of developers of GoFruits, when you can see the crops of Jamaica in the best view. Vote farmers and more. Authors: Marisniulkis Lescaille Cos, Nersa Acosta Labrada, Pablo Molina Toledo"
+
+    
+    /> 
+</LinearLayout>

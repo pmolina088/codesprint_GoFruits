@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import-once "mixins";
+@import-once "forms";
+
+/* DEFAULT COLORS
+*****************/
+@white: #fff;
+@black: #222;
+@gray: #666;
+@grayDark: #444;
+@grayLight: #bbb;
+/*@green: rgb(0, 121, 0);*/
+@green: #63B330;
+@yellow: rgb(244, 211, 30);
+
+@inputBackground: #fff;
+@inputBorder: @green;
+
+/* DEFAULT VARS
+***************/
+@baseFontFamily: Arial, "Lucida Grande", sans-serif;
+@baseLineHeight: 20px;
+@baseFontSize: 13px;
+@inputBorderRadius: 4px;
+@textColor: @black;
+
+/* COMMON STYLES
+****************/
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #F4F6F6;
+}
+
+.container-map{
+    background-color: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    .border-radius(10px);
+}
+
+#map{
+    height: 400px;
+}
+
+// Hover/Focus state
+// -----------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    color: @white;
+    #gradient > .vertical( fade(@green, 80%), darken(@green, 5%));
+}
+
+// Active state
+// ------------
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: @white;
+    #gradient > .vertical( fade(@green, 80%), darken(@green, 5%));
+}
+
+.navbar .btn, .navbar .btn-group{
+    margin-top: -5px;
+}
+
+.copy{
+    text-align: center;
+}
+
+@media (max-width: 979px) {
+    body{
+        padding-top: 0 !important;
+    }
+}
